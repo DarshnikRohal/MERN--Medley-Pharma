@@ -1,0 +1,153 @@
+.navbar {
+  background-color: #1976d2;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+  border-bottom: 3px solid #fff;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4081;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #fff;
+  color: #1976d2;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn, .register-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  border: 1px solid #fff;
+}
+
+.register-btn {
+  background-color: #fff;
+  color: #1976d2;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.register-btn:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+}
